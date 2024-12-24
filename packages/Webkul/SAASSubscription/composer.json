@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/laravel-saas-subscription",
+    "license": "MIT",
+    "description" : "SAASSubscription package",
+    "authors": [
+        {
+            "name": "Bagisto",
+            "email": "support@bagisto.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Webkul\\SAASSubscription\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\SAASSubscription\\Providers\\SAASSubscriptionServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

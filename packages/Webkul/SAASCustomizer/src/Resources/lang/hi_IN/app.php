@@ -1,0 +1,1058 @@
+<?php
+
+return [
+    'components' => [
+        'layouts' => [
+            'header' => [
+                'app-version'   => 'संस्करण : :version',
+                'account-title' => 'खाता',
+                'logout'        => 'लॉगआउट',
+                'my-account'    => 'मेरा खाता',
+                'visit-shop'    => 'दुकान पर जाएं',
+            ],
+    
+            'sidebar' => [
+                'tenants'          => 'किरायेदार',
+                'tenant-customers' => 'ग्राहक',
+                'tenant-products'  => 'उत्पाद',
+                'tenant-orders'    => 'आदेश',
+                'settings'         => 'सेटिंग्स',
+                'agents'           => 'एजेंट्स',
+                'roles'            => 'भूमिकाएँ',
+                'locales'          => 'स्थानीय',
+                'currencies'       => 'मुद्राएँ',
+                'channels'         => 'चैनल्स',
+                'exchange-rates'   => 'विनिमय दरें',
+                'themes'           => 'थीम्स',
+                'cms'              => 'सीएमएस',
+                'configurations'   => 'कॉन्फ़िगर करें',
+                'general'          => 'सामान्य',
+                'send-email'       => 'ईमेल भेजें',
+            ],
+        ],
+    ],
+
+    'super' => [
+        'acl' => [
+            'tenants'        => 'किरायेदार',
+            'create'         => 'जोड़ें',
+            'edit'           => 'संपादित करें',
+            'delete'         => 'हटाएं',
+            'cancel'         => 'रद्द करें',
+            'view'           => 'देखें',
+            'mass-delete'    => 'सामूहिक हटाएं',
+            'mass-update'    => 'सामूहिक अपडेट',
+            'customers'      => 'ग्राहक',
+            'products'       => 'उत्पाद',
+            'orders'         => 'आदेश',
+            'settings'       => 'सेटिंग्स',
+            'agents'         => 'एजेंट्स',
+            'roles'          => 'भूमिकाएँ',
+            'locales'        => 'स्थान',
+            'currencies'     => 'मुद्राएँ',
+            'exchange-rates' => 'विनिमय दरें',
+            'channels'       => 'चैनल्स',
+            'themes'         => 'थीम्स',
+            'send-email'     => 'ईमेल भेजें',
+            'cms'            => 'सीएमएस',
+            'configuration'  => 'कॉन्फ़िगरेशन',
+            'download'       => 'डाउनलोड',
+        ],
+        
+        'agents' => [
+            'sessions' => [
+                'title'                => 'सुपर एडमिन साइन इन',
+                'email'                => 'ईमेल पता',
+                'password'             => 'पासवर्ड',
+                'btn-submit'           => 'साइन इन करें',
+                'forget-password-link' => 'पासवर्ड भूल गए?',
+                'submit-btn'           => 'साइन इन करें',
+                'login-success'        => 'सफलता: आपने सफलतापूर्वक साइन इन किया है।',
+                'login-error'          => 'कृपया अपने क्रेडेंशियल्स की जाँच करें और पुन: प्रयास करें।',
+                'activate-warning'     => 'आपका खाता अभी सक्रिय नहीं हुआ है, कृपया प्रशासक से संपर्क करें।',
+            ],
+        
+            'forget-password' => [
+                'create' => [
+                    'page-title'      => 'पासवर्ड भूल गए',
+                    'title'           => 'पासवर्ड पुनर्प्राप्त करें',
+                    'email'           => 'रजिस्टर्ड ईमेल',
+                    'reset-link-sent' => 'पासवर्ड रीसेट लिंक भेजा गया है',
+                    'sign-in-link'    => 'साइन इन के लिए वापस जाएं?',
+                    'email-not-exist' => 'ईमेल मौजूद नहीं है',
+                    'submit-btn'      => 'रीसेट करें',
+                ],
+            ],
+        
+            'reset-password' => [
+                'title'            => 'पासवर्ड रीसेट करें',
+                'back-link-title'  => 'साइन इन के लिए वापस जाएं?',
+                'confirm-password' => 'पासवर्ड की पुष्टि करें',
+                'email'            => 'रजिस्टर्ड ईमेल',
+                'password'         => 'पासवर्ड',
+                'submit-btn'       => 'पासवर्ड रीसेट करें',
+            ],
+        ],
+
+        'tenants' => [
+            'index' => [
+                'title'        => 'किरायेदारों की सूची',
+                'register-btn' => 'किरायेदार पंजीकृत करें',
+        
+                'create' => [
+                    'title'             => 'किरायेदार बनाएं',
+                    'first-name'        => 'पहला नाम',
+                    'last-name'         => 'अंतिम नाम',
+                    'user-name'         => 'उपयोगकर्ता नाम',
+                    'organization-name' => 'संगठन का नाम',
+                    'phone'             => 'फ़ोन',
+                    'email'             => 'ईमेल',
+                    'password'          => 'पासवर्ड',
+                    'confirm-password'  => 'पासवर्ड की पुष्टि करें',
+                    'save-btn'          => 'किरायेदार सहेजें',
+                    'back-btn'          => 'पीछे',
+                ],
+        
+                'datagrid' => [
+                    'id'                  => 'आईडी',
+                    'user-name'           => 'उपयोगकर्ता नाम',
+                    'organization'        => 'संगठन',
+                    'domain'              => 'डोमेन',
+                    'cname'               => 'सीनाम',
+                    'status'              => 'स्थिति',
+                    'active'              => 'सक्रिय',
+                    'disable'             => 'निष्क्रिय',
+                    'view'                => 'इंशाइट्स देखें',
+                    'edit'                => 'किरायेदार संशोधित करें',
+                    'delete'              => 'किरायेदार हटाएं',
+                    'mass-delete'         => 'समूह में हटाएं',
+                    'mass-delete-success' => 'चयनित किरायेदार सफलतापूर्वक हटा दिए गए',
+                ],
+            ],
+        
+            'edit' => [
+                'title'             => 'किरायेदार संपादित करें',
+                'first-name'        => 'पहला नाम',
+                'last-name'         => 'अंतिम नाम',
+                'user-name'         => 'उपयोगकर्ता नाम',
+                'cname'             => 'सीनाम',
+                'organization-name' => 'संगठन का नाम',
+                'phone'             => 'फ़ोन',
+                'status'            => 'स्थिति',
+                'email'             => 'ईमेल',
+                'password'          => 'पासवर्ड',
+                'confirm-password'  => 'पासवर्ड की पुष्टि करें',
+                'save-btn'          => 'किरायेदार सहेजें',
+                'back-btn'          => 'पीछे',
+                'general'           => 'सामान्य',
+                'settings'          => 'सेटिंग्स',
+            ],
+        
+            'view' => [
+                'title'                        => 'किरायेदार का इंशाइट्स',
+                'heading'                      => 'किरायेदार - :tenant_name',
+                'email-address'                => 'ईमेल पता',
+                'phone'                        => 'फ़ोन',
+                'domain-information'           => 'डोमेन जानकारी',
+                'mapped-domain'                => 'मैप किया गया डोमेन',
+                'cname-information'            => 'सीनाम जानकारी',
+                'cname-entry'                  => 'सीनाम प्रविष्टि',
+                'attribute-information'        => 'गुणक जानकारी',
+                'no-of-attributes'             => 'गुणकों की संख्या',
+                'attribute-family-information' => 'गुणक परिवार जानकारी',
+                'no-of-attribute-families'     => 'गुणक परिवारों की संख्या',
+                'product-information'          => 'उत्पाद जानकारी',
+                'no-of-products'               => 'उत्पादों की संख्या',
+                'customer-information'         => 'ग्राहक जानकारी',
+                'no-of-customers'              => 'ग्राहकों की संख्या',
+                'customer-group-information'   => 'ग्राहक समूह जानकारी',
+                'no-of-customer-groups'        => 'ग्राहक समूहों की संख्या',
+                'category-information'         => 'श्रेणी जानकारी',
+                'no-of-categories'             => 'श्रेणियों की संख्या',
+                'addresses'                    => 'पता सूची (:count)',
+                'empty-title'                  => 'किरायेदार पता',
+            ],
+        
+            'create-success' => 'किरायेदार सफलतापूर्वक बनाया गया',
+            'delete-success' => 'किरायेदार सफलतापूर्वक हटा दिया गया',
+            'delete-failed'  => 'किरायेदार हटाने में विफल',
+            'product-copied' => 'किरायेदार सफलतापूर्वक कॉपी हुआ',
+            'update-success' => 'किरायेदार सफलतापूर्वक अपडेट किया गया',
+        
+            'customers' => [
+                'index' => [
+                    'title' => 'ग्राहकों की सूची',
+        
+                    'datagrid' => [
+                        'id'             => 'आईडी',
+                        'domain'         => 'डोमेन',
+                        'customer-name'  => 'ग्राहक का नाम',
+                        'email'          => 'ईमेल',
+                        'customer-group' => 'ग्राहक समूह',
+                        'phone'          => 'फ़ोन',
+                        'status'         => 'स्थिति',
+                        'active'         => 'सक्रिय',
+                        'inactive'       => 'निष्क्रिय',
+                        'is-suspended'   => 'निलंबित',
+                    ],
+                ],
+            ],
+        
+            'products' => [
+                'index' => [
+                    'title' => 'उत्पादों की सूची',
+        
+                    'datagrid' => [
+                        'id'               => 'आईडी',
+                        'domain'           => 'डोमेन',
+                        'name'             => 'नाम',
+                        'sku'              => 'SKU',
+                        'attribute-family' => 'गुणक परिवार',
+                        'image'            => 'छवि',
+                        'price'            => 'मूल्य',
+                        'qty'              => 'मात्रा',
+                        'status'           => 'स्थिति',
+                        'active'           => 'सक्रिय',
+                        'inactive'         => 'निष्क्रिय',
+                        'category'         => 'श्रेणी',
+                        'type'             => 'प्रकार',
+                    ],
+                ],
+            ],
+        
+            'orders' => [
+                'index' => [
+                    'title' => 'आदेशों की सूची',
+        
+                    'datagrid' => [
+                        'id'              => '#:id',
+                        'order-id'        => 'आदेश आईडी',
+                        'domain'          => 'डोमेन',
+                        'sub-total'       => 'उप-कुल',
+                        'grand-total'     => 'कुल योग',
+                        'order-date'      => 'आदेश तिथि',
+                        'channel-name'    => 'चैनल का नाम',
+                        'status'          => 'स्थिति',
+                        'processing'      => 'प्रोसेसिंग',
+                        'completed'       => 'पूर्ण',
+                        'canceled'        => 'रद्द',
+                        'closed'          => 'बंद',
+                        'pending'         => 'अपूर्ण',
+                        'pending-payment' => 'अपूर्ण भुगतान',
+                        'fraud'           => 'धोखाधड़ी',
+                        'customer'        => 'ग्राहक',
+                        'email'           => 'ईमेल',
+                        'location'        => 'स्थान',
+                        'images'          => 'छवियाँ',
+                        'pay-by'          => 'द्वारा भुगतान करें - ',
+                        'pay-via'         => 'के माध्यम से भुगतान करें',
+                        'date'            => 'तारीख',
+                    ],
+                ],
+            ],
+        ],
+
+        'settings' => [
+            'agents' => [
+                'index' => [
+                    'title'        => 'एजेंट सूची',
+                    'register-btn' => 'एजेंट बनाएं',
+            
+                    'create' => [
+                        'title'             => 'एजेंट बनाएं',
+                        'first-name'        => 'पहला नाम',
+                        'last-name'         => 'अंतिम नाम',
+                        'email'             => 'ईमेल',
+                        'current-password'  => 'वर्तमान पासवर्ड',
+                        'password'          => 'पासवर्ड',
+                        'confirm-password'  => 'पासवर्ड की पुष्टि करें',
+                        'role'              => 'भूमिका',
+                        'select'            => 'चयन करें',
+                        'status'            => 'स्थिति',
+                        'save-btn'          => 'आदान-प्रदान सहेजें',
+                        'back-btn'          => 'पीछे जाएं',
+                        'upload-image-info' => 'प्रोफ़ाइल छवि अपलोड करें (110px X 110px) PNG या JPG प्रारूप में',
+                    ],
+            
+                    'edit' => [
+                        'title' => 'एजेंट संपादित करें',
+                    ],
+            
+                    'datagrid' => [
+                        'id'      => 'आईडी',
+                        'name'    => 'नाम',
+                        'email'   => 'ईमेल',
+                        'role'    => 'भूमिका',
+                        'status'  => 'स्थिति',
+                        'active'  => 'सक्रिय',
+                        'disable' => 'अक्षम',
+                        'actions' => 'क्रियाएँ',
+                        'edit'    => 'संपादित करें',
+                        'delete'  => 'हटाएं',
+                    ],
+                ],
+            
+                'create-success'             => 'सफलता: सुपर एडमिन एजेंट सफलतापूर्वक बनाया गया',
+                'delete-success'             => 'आदान-प्रदान सफलतापूर्वक हटा दिया गया',
+                'delete-failed'              => 'आदान-प्रदान हटाने में विफल',
+                'cannot-change'              => 'एजेंट :name को बदला नहीं जा सकता',
+                'product-copied'             => 'आदान-प्रदान सफलतापूर्वक कॉपी किया गया',
+                'update-success'             => 'आदान-प्रदान सफलतापूर्वक अपडेट किया गया',
+                'invalid-password'           => 'आपने दर्ज किया हुआ वर्तमान पासवर्ड गलत है',
+                'last-delete-error'          => 'चेतावनी: कम से कम एक सुपर एडमिन एजेंट की आवश्यकता है',
+                'login-delete-error'         => 'चेतावनी: अपना खाता हटा नहीं सकते हैं।',
+                'administrator-delete-error' => 'चेतावनी: कम से कम एक सुपर एडमिन एजेंट जिसके पास प्रशासकीय पहुंच है, की आवश्यकता है।',
+            ],
+            
+            'roles' => [
+                'index' => [
+                    'title'      => 'भूमिकाएँ सूची',
+                    'create-btn' => 'भूमिका बनाएं',
+            
+                    'datagrid' => [
+                        'id'              => 'आईडी',
+                        'name'            => 'नाम',
+                        'permission-type' => 'अनुमति प्रकार',
+                        'actions'         => 'क्रियाएँ',
+                        'edit'            => 'संपादित करें',
+                        'delete'          => 'हटाएं',
+                    ],
+                ],
+            
+                'create' => [
+                    'access-control' => 'पहुंच नियंत्रण',
+                    'all'            => 'सभी',
+                    'back-btn'       => 'पीछे जाएं',
+                    'custom'         => 'कस्टम',
+                    'description'    => 'विवरण',
+                    'general'        => 'सामान्य',
+                    'name'           => 'नाम',
+                    'permissions'    => 'अनुमतियाँ',
+                    'save-btn'       => 'भूमिका सहेजें',
+                    'title'          => 'भूमिका बनाएं',
+                ],
+            
+                'edit' => [
+                    'access-control' => 'पहुंच नियंत्रण',
+                    'all'            => 'सभी',
+                    'back-btn'       => 'पीछे जाएं',
+                    'custom'         => 'कस्टम',
+                    'description'    => 'विवरण',
+                    'general'        => 'सामान्य',
+                    'name'           => 'नाम',
+                    'permissions'    => 'अनुमतियाँ',
+                    'save-btn'       => 'भूमिका सहेजें',
+                    'title'          => 'भूमिका संपादित करें',
+                ],
+            
+                'being-used'        => 'भूमिका पहले से ही एक अन्य एजेंट द्वारा उपयोग की जा रही है',
+                'last-delete-error' => 'आखिरी भूमिका को हटाया नहीं जा सकता',
+                'create-success'    => 'भूमिका सफलतापूर्वक बनाई गई',
+                'delete-success'    => 'भूमिका सफलतापूर्वक हटाई गई',
+                'delete-failed'     => 'भूमिका हटाने में विफल',
+                'update-success'    => 'भूमिका सफलतापूर्वक अपडेट की गई',
+            ],
+            
+            'locales' => [
+                'index' => [
+                    'title'      => 'स्थानीय सूची',
+                    'create-btn' => 'स्थानीय बनाएं',
+            
+                    'create' => [
+                        'title'            => 'स्थानीय बनाएं',
+                        'code'             => 'कोड',
+                        'name'             => 'नाम',
+                        'direction'        => 'दिशा',
+                        'select-direction' => 'दिशा का चयन करें',
+                        'text-ltr'         => 'एलटीआर',
+                        'text-rtl'         => 'आरटीएल',
+                        'locale-logo'      => 'स्थानीय लोगो',
+                        'logo-size'        => 'छवि का संकलन 24px X 16px की तरह होना चाहिए',
+                        'save-btn'         => 'स्थानीय सहेजें',
+                    ],
+            
+                    'edit' => [
+                        'title'     => 'स्थानीय संपादित करें',
+                        'code'      => 'कोड',
+                        'name'      => 'नाम',
+                        'direction' => 'दिशा',
+                    ],
+            
+                    'datagrid' => [
+                        'id'        => 'आईडी',
+                        'code'      => 'कोड',
+                        'name'      => 'नाम',
+                        'direction' => 'दिशा',
+                        'text-ltr'  => 'एलटीआर',
+                        'text-rtl'  => 'आरटीएल',
+                        'actions'   => 'क्रियाएँ',
+                        'edit'      => 'संपादित करें',
+                        'delete'    => 'हटाएं',
+                    ],
+                ],
+            
+                'being-used'        => ':locale_name locale is used as default locale in channel',
+                'create-success'    => 'स्थानीय सफलतापूर्वक बनाई गई है।',
+                'update-success'    => 'स्थानीय सफलतापूर्वक अपडेट की गई है।',
+                'delete-success'    => 'स्थानीय सफलतापूर्वक हटाई गई है।',
+                'delete-failed'     => 'स्थानीय हटाने में विफल',
+                'last-delete-error' => 'कम से कम एक सुपर एडमिन स्थानीय की आवश्यकता है।',
+            ],
+
+            'currencies' => [
+                'index' => [
+                    'title'      => 'मुद्रा सूची',
+                    'create-btn' => 'मुद्रा बनाएं',
+            
+                    'create' => [
+                        'title'    => 'मुद्रा बनाएं',
+                        'code'     => 'कोड',
+                        'name'     => 'नाम',
+                        'symbol'   => 'प्रतीक',
+                        'decimal'  => 'दशमलव',
+                        'save-btn' => 'मुद्रा सहेजें',
+                    ],
+            
+                    'edit' => [
+                        'title'    => 'मुद्रा संपादित करें',
+                        'code'     => 'कोड',
+                        'name'     => 'नाम',
+                        'symbol'   => 'प्रतीक',
+                        'decimal'  => 'दशमलव',
+                        'save-btn' => 'मुद्रा सहेजें',
+                    ],
+            
+                    'datagrid' => [
+                        'id'      => 'आईडी',
+                        'code'    => 'कोड',
+                        'name'    => 'नाम',
+                        'actions' => 'क्रियाएँ',
+                        'edit'    => 'संपादित करें',
+                        'delete'  => 'हटाएं',
+                    ],
+                ],
+            
+                'create-success'      => 'मुद्रा सफलतापूर्वक बनाई गई।',
+                'update-success'      => 'मुद्रा सफलतापूर्वक अपडेट की गई।',
+                'delete-success'      => 'मुद्रा सफलतापूर्वक हटाई गई।',
+                'delete-failed'       => 'मुद्रा हटाने में असफल',
+                'last-delete-error'   => 'कम से कम एक सुपर एडमिन मुद्रा की आवश्यकता है।',
+                'mass-delete-success' => 'चयनित मुद्राएँ सफलतापूर्वक हटाई गईं।',
+            ],
+            
+            'exchange-rates' => [
+                'index' => [
+                    'title'        => 'विनिमय दरें',
+                    'create-btn'   => 'विनिमय दर बनाएं',
+                    'update-rates' => 'दरें अपडेट करें',
+            
+                    'create' => [
+                        'title'                  => 'विनिमय दर बनाएं',
+                        'source-currency'        => 'स्रोत मुद्रा',
+                        'target-currency'        => 'लक्ष्य मुद्रा',
+                        'select-target-currency' => 'लक्ष्य मुद्रा चुनें',
+                        'rate'                   => 'दर',
+                        'save-btn'               => 'विनिमय दर सहेजें',
+                    ],
+            
+                    'edit' => [
+                        'title'           => 'विनिमय दर संपादित करें',
+                        'source-currency' => 'स्रोत मुद्रा',
+                        'target-currency' => 'लक्ष्य मुद्रा',
+                        'rate'            => 'दर',
+                        'save-btn'        => 'विनिमय दर सहेजें',
+                    ],
+            
+                    'datagrid' => [
+                        'id'            => 'आईडी',
+                        'currency-name' => 'मुद्रा नाम',
+                        'exchange-rate' => 'विनिमय दर',
+                        'actions'       => 'क्रियाएँ',
+                        'edit'          => 'संपादित करें',
+                        'delete'        => 'हटाएं',
+                    ],
+                ],
+            
+                'create-success' => 'विनिमय दर सफलतापूर्वक बनाई गई।',
+                'update-success' => 'विनिमय दर सफलतापूर्वक अपडेट की गई।',
+                'delete-success' => 'विनिमय दर सफलतापूर्वक हटाई गई।',
+                'delete-failed'  => 'विनिमय दर हटाने में असफल',
+            ],
+            
+            'channels' => [
+                'index' => [
+                    'title' => 'चैनल्स',
+            
+                    'datagrid' => [
+                        'id'       => 'आईडी',
+                        'code'     => 'कोड',
+                        'name'     => 'नाम',
+                        'hostname' => 'होस्ट नाम',
+                        'actions'  => 'क्रियाएँ',
+                        'edit'     => 'संपादित करें',
+                        'delete'   => 'हटाएं',
+                    ],
+                ],
+            
+                'edit' => [
+                    'title'                  => 'चैनल संपादित करें',
+                    'back-btn'               => 'पीछे जाएं',
+                    'save-btn'               => 'चैनल सहेजें',
+                    'general'                => 'सामान्य',
+                    'code'                   => 'कोड',
+                    'name'                   => 'नाम',
+                    'description'            => 'विवरण',
+                    'hostname'               => 'होस्टनाम',
+                    'hostname-placeholder'   => 'https://www.example.com (अंत में स्लैश न जोड़ें।)',
+                    'design'                 => 'डिजाइन',
+                    'theme'                  => 'थीम',
+                    'logo'                   => 'लोगो',
+                    'logo-size'              => 'छवि का संकलन 192px X 50px की तरह होना चाहिए',
+                    'favicon'                => 'फ़ेविकॉन',
+                    'favicon-size'           => 'छवि का संकलन 16px X 16px की तरह होना चाहिए',
+                    'seo'                    => 'होम पेज एसईओ',
+                    'seo-title'              => 'मेटा शीर्षक',
+                    'seo-description'        => 'मेटा विवरण',
+                    'seo-keywords'           => 'मेटा कीवर्ड्स',
+                    'currencies-and-locales' => 'मुद्राएँ और स्थान',
+                    'locales'                => 'स्थान',
+                    'default-locale'         => 'डिफ़ॉल्ट स्थान',
+                    'currencies'             => 'मुद्राएँ',
+                    'default-currency'       => 'डिफ़ॉल्ट मुद्रा',
+                    'last-delete-error'      => 'कम से कम एक चैनल की आवश्यकता है।',
+                    'settings'               => 'सेटिंग्स',
+                    'status'                 => 'स्थिति',
+                    'update-success'         => 'चैनल सफलतापूर्वक अपडेट किया गया',
+                ],
+            
+                'update-success' => 'चैनल सफलतापूर्वक अपडेट किया गया।',
+                'delete-success' => 'चैनल सफलतापूर्वक हटाया गया।',
+                'delete-failed'  => 'चैनल हटाने में असफल',
+            ],
+
+            'themes' => [
+                'index' => [
+                    'create-btn' => 'थीम बनाएँ',
+                    'title' => 'थीम्स',
+            
+                    'datagrid' => [
+                        'active' => 'सक्रिय',
+                        'channel_name' => 'चैनल का नाम',
+                        'delete' => 'हटाएँ',
+                        'inactive' => 'निष्क्रिय',
+                        'id' => 'आईडी',
+                        'name' => 'नाम',
+                        'status' => 'स्थिति',
+                        'sort-order' => 'क्रमबद्ध क्रम',
+                        'type' => 'प्रकार',
+                        'view' => 'दृश्य',
+                    ],
+                ],
+            
+                'create' => [
+                    'name' => 'नाम',
+                    'save-btn' => 'थीम सहेजें',
+                    'sort-order' => 'क्रमबद्ध क्रम',
+                    'title' => 'थीम बनाएँ',
+            
+                    'type' => [
+                        'footer-links' => 'फ़ुटर लिंक्स',
+                        'image-carousel' => 'स्लाइडर कैरोसेल',
+                        'product-carousel' => 'उत्पाद कैरोसेल',
+                        'static-content' => 'स्थायी सामग्री',
+                        'services-content' => 'सेवा सामग्री',
+                        'title' => 'प्रकार',
+                    ],
+                ],
+            
+                'edit' => [
+                    'add-image-btn' => 'छवि जोड़ें',
+                    'add-filter-btn' => 'फ़िल्टर जोड़ें',
+                    'add-footer-link-btn' => 'फ़ुटर लिंक जोड़ें',
+                    'add-link' => 'लिंक जोड़ें',
+                    'asc' => 'आरोही',
+                    'back' => 'पीछे जाएं',
+                    'category-carousel-description' => 'एक प्रतिक्रियाशील श्रेणी कैरोसेल का उपयोग करके डायनामिक श्रेणियों को आकर्षक तरीके से प्रदर्शित करें।',
+                    'category-carousel' => 'श्रेणी कैरोसेल',
+                    'create-filter' => 'फ़िल्टर बनाएँ',
+                    'css' => 'सीएसएस',
+                    'column' => 'स्तंभ',
+                    'channels' => 'चैनल्स',
+                    'desc' => 'अवरोही',
+                    'delete' => 'हटाएँ',
+                    'edit' => 'संपादित करें',
+                    'footer-title' => 'शीर्षक',
+                    'footer-link' => 'फ़ुटर लिंक्स',
+                    'footer-link-form-title' => 'फ़ुटर लिंक',
+                    'filter-title' => 'शीर्षक',
+                    'filters' => 'फ़िल्टर्स',
+                    'footer-link-description' => 'सीमित वेबसाइट अन्वेषण और जानकारी के लिए फ़ुटर लिंक का उपयोग करें।',
+                    'general' => 'सामान्य',
+                    'html' => 'एचटीएमएल',
+                    'image' => 'छवि',
+                    'image-size' => 'छवि का समाधान (1920px X 700px) होना चाहिए',
+                    'image-title' => 'छवि शीर्षक',
+                    'image-upload-message' => 'केवल छवियाँ (.jpeg, .jpg, .png, .webp, ..) अनुमत हैं।',
+                    'key' => 'कुंजी: :key',
+                    'key-input' => 'कुंजी',
+                    'link' => 'लिंक',
+                    'limit' => 'सीमा',
+                    'name' => 'नाम',
+                    'product-carousel' => 'उत्पाद कैरोसेल',
+                    'product-carousel-description' => 'एक गतिशील और प्रतिक्रियाशील उत्पाद कैरोसेल के साथ उत्पादों को शोकेस करें।',
+                    'path' => 'पथ',
+                    'preview' => 'पूर्वावलोकन',
+                    'slider' => 'स्लाइडर',
+                    'static-content-description' => 'अपने दर्शकों के लिए संक्षेपवादी, सूचनात्मक स्थायी सामग्री के साथ आकर्षण बढ़ाएं।',
+                    'static-content' => 'स्थायी सामग्री',
+                    'slider-description' => 'स्लाइडर संबंधित थीम कस्टमाइजेशन।',
+                    'slider-required' => 'स्लाइडर फ़ील्ड आवश्यक है।',
+                    'slider-add-btn' => 'स्लाइडर जोड़ें',
+                    'save-btn' => 'सहेजें',
+                    'sort' => 'क्रमबद्ध करें',
+                    'sort-order' => 'क्रमबद्ध क्रम',
+                    'status' => 'स्थिति',
+                    'slider-image' => 'स्लाइडर छवि',
+                    'select' => 'चयन करें',
+                    'title' => 'थीम संपादित करें',
+                    'update-slider' => 'स्लाइडर अपडेट करें',
+                    'url' => 'यूआरएल',
+                    'value-input' => 'मूल्य',
+                    'value' => 'मूल्य: :value',
+            
+                    'services-content' => [
+                        'add-btn' => 'सेवाएं जोड़ें',
+                        'channels' => 'चैनल्स',
+                        'delete' => 'हटाएँ',
+                        'description' => 'विवरण',
+                        'general' => 'सामान्य',
+                        'name' => 'नाम',
+                        'save-btn' => 'सहेजें',
+                        'service-icon' => 'सेवा आइकन',
+                        'service-icon-class' => 'सेवा आइकन कक्षा',
+                        'service-info' => 'सेवा संबंधित थीम कस्टमाइजेशन।',
+                        'services' => 'सेवाएं',
+                        'sort-order' => 'क्रमबद्ध क्रम',
+                        'status' => 'स्थिति',
+                        'title' => 'शीर्षक',
+                        'update-service' => 'सेवाएं अपडेट करें',
+                    ],
+                ],
+            
+                'create-success' => 'थीम सफलतापूर्वक बनाई गई',
+                'delete-success' => 'थीम सफलतापूर्वक हटा दी गई',
+                'update-success' => 'थीम सफलतापूर्वक अपडेट की गई',
+                'delete-failed'  => 'थीम सामग्री हटाते समय त्रुटि आई।',
+            ],
+            
+            'email' => [
+                'create' => [
+                    'send-btn' => 'ईमेल भेजें',
+                    'back-btn' => 'पीछे जाएं',
+                    'title' => 'ईमेल भेजें',
+                    'general' => 'सामान्य',
+                    'body' => 'शरीर',
+                    'subject' => 'विषय',
+                    'dear' => 'प्रिय :agent_name',
+                    'agent-registration' => 'सास एजेंट सफलतापूर्वक पंजीकृत हुआ',
+                    'summary' => 'आपका खाता बनाया गया है। आपका खाता विवरण नीचे है:',
+                    'saas-url' => 'डोमेन',
+                    'email' => 'ईमेल',
+                    'password' => 'पासवर्ड',
+                    'sign-in' => 'साइन इन करें',
+                    'thanks' => 'धन्यवाद!',
+                    'send-email-to-all-tenants' => 'सभी किरायेदारों को ईमेल भेजें',
+                ],
+            
+                'send-success' => 'ईमेल सफलतापूर्वक भेजा गया है।',
+            ],
+        ],
+
+        'cms' => [
+            'index' => [
+                'title'      => 'CMS पृष्ठ सूची',
+                'create-btn' => 'पृष्ठ बनाएं',
+        
+                'datagrid' => [
+                    'id'                  => 'आईडी',
+                    'page-title'          => 'पृष्ठ शीर्षक',
+                    'url-key'             => 'URL कुंजी',
+                    'status'              => 'स्थिति',
+                    'active'              => 'सक्रिय',
+                    'disable'             => 'निष्क्रिय',
+                    'edit'                => 'पृष्ठ संपादित करें',
+                    'delete'              => 'पृष्ठ हटाएं',
+                    'mass-delete'         => 'समूह हटाएं',
+                    'mass-delete-success' => 'चयनित CMS पृष्ठ (आप) को सफलतापूर्वक हटा दिया गया है',
+                ],
+            ],
+        
+            'create' => [
+                'title'            => 'CMS पृष्ठ बनाएं',
+                'first-name'       => 'पहला नाम',
+                'general'          => 'सामान्य',
+                'page-title'       => 'शीर्षक',
+                'channels'         => 'चैनल',
+                'content'          => 'सामग्री',
+                'meta-keywords'    => 'मेटा कीवर्ड्स',
+                'meta-description' => 'मेटा विवरण',
+                'meta-title'       => 'मेटा शीर्षक',
+                'seo'              => 'एसईओ',
+                'url-key'          => 'URL कुंजी',
+                'description'      => 'विवरण',
+                'save-btn'         => 'CMS पृष्ठ सहेजें',
+                'back-btn'         => 'पीछे जाएं',
+            ],
+        
+            'edit' => [
+                'title'            => 'पृष्ठ संपादित करें',
+                'preview-btn'      => 'पृष्ठ पूर्वावलोकन',
+                'save-btn'         => 'पृष्ठ सहेजें',
+                'general'          => 'सामान्य',
+                'page-title'       => 'पृष्ठ शीर्षक',
+                'back-btn'         => 'पीछे जाएं',
+                'channels'         => 'चैनल',
+                'content'          => 'सामग्री',
+                'seo'              => 'एसईओ',
+                'meta-keywords'    => 'मेटा कीवर्ड्स',
+                'meta-description' => 'मेटा विवरण',
+                'meta-title'       => 'मेटा शीर्षक',
+                'url-key'          => 'URL कुंजी',
+                'description'      => 'विवरण',
+            ],
+        
+            'create-success' => 'CMS सफलतापूर्वक बनाया गया है।',
+            'delete-success' => 'CMS सफलतापूर्वक हटाया गया है।',
+            'update-success' => 'CMS सफलतापूर्वक अपडेट किया गया है।',
+            'no-resource'    => 'संसाधन मौजूद नहीं है।',
+        ],
+        
+        'configuration' => [
+            'index' => [
+                'delete'                       => 'हटाएं',
+                'enable-at-least-one-shipping' => 'कम से कम एक शिपिंग मेथड को सक्षम करें।',
+                'enable-at-least-one-payment'  => 'कम से कम एक भुगतान मेथड को सक्षम करें।',
+                'save-btn'                     => 'कॉन्फ़िगरेशन सहेजें',
+                'save-message'                 => 'कॉन्फ़िगरेशन सफलतापूर्वक सहेजा गया',
+                'title'                        => 'कॉन्फ़िगरेशन',
+        
+                'general' => [
+                    'info'  => 'लेआउट और ईमेल विवरण का प्रबंधन करें',
+                    'title' => 'सामान्य',
+        
+                    'design' => [
+                        'info'  => 'लोगो और फेविकॉन आइकन को सेट करें।',
+                        'title' => 'डिज़ाइन',
+        
+                        'super' => [
+                            'info'          => 'सुपर एडमिन लोगो सिस्टम या वेबसाइट के प्रशासन इंटरफेस को प्रतिष्ठान चित्र या प्रतीक होता है, जो अक्सर अनुकूलन किया जा सकता है।',
+                            'admin-logo'    => 'एडमिन लोगो',
+                            'logo-image'    => 'लोगो छवि',
+                            'favicon-image' => 'फेविकॉन छवि',
+                        ],
+                    ],
+        
+                    'agent' => [
+                        'info'  => 'सुपर एडमिन के लिए ईमेल पता सेट करें।',
+                        'title' => 'सुपर एजेंट',
+        
+                        'super' => [
+                            'info'          => 'सुपर एडमिन के लिए ईमेल सूचनाएँ प्राप्त करने के लिए ईमेल पता सेट करें',
+                            'email-address' => 'ईमेल पता',
+                        ],
+
+                        'social-connect' => [
+                            'title'    => 'सामाजिक कनेक्ट',
+                            'info'     => 'सोशल मीडिया प्लेटफ़ॉर्म आपको आपके दर्शकों के साथ सीधे बातचीत करने के अवसर प्रदान करते हैं, टिप्पणियों, लाइक्स और शेयर्स के माध्यम से, जो लोकप्रियता बढ़ाने और अपने ब्रांड के चारों ओर एक समुदाय बनाने के लिए योजना बनाते हैं।',
+                            'facebook' => 'फेसबुक',
+                            'twitter'  => 'ट्विटर',
+                            'linkedin' => 'लिंक्डइन',
+                        ],
+                    ],
+        
+                    'content' => [
+                        'info'   => 'किरायेदार पंजी लेआउट के लिए हेडर और फ़ूटर जानकारी सेट करें।',
+                        'title'  => 'सामग्री',
+        
+                        'footer' => [
+                            'info'           => 'फ़ूटर सामग्री सेट करें',
+                            'title'          => 'फ़ूटर',
+                            'footer-content' => 'फ़ूटर पाठ',
+                            'footer-toggle'  => 'फ़ूटर टॉगल करें',
+                        ],
+                    ],
+                ],
+        
+                'sales' => [
+                    'info'  => 'बिक्री, शिपिंग, और भुगतान मेथड विवरण का प्रबंधन करें',
+                    'title' => 'बिक्री',
+        
+                    'shipping-methods' => [
+                        'info'  => 'शिपिंग मेथड्स जानकारी सेट करें',
+                        'title' => 'शिपिंग मेथड्स',
+                    ],
+        
+                    'payment-methods' => [
+                        'info'  => 'भुगतान मेथड्स जानकारी सेट करें',
+                        'title' => 'भुगतान मेथड्स',
+                    ],
+                ],
+            ],
+        
+            'enable-at-least-one-shipping' => 'कम से कम एक शिपिंग मेथड को सक्षम करें।',
+            'enable-at-least-one-payment'  => 'कम से कम एक भुगतान मेथड को सक्षम करें।',
+            'save-message'                 => 'सफलता: सुपर एडमिन कॉन्फ़िगरेशन सफलतापूर्वक सहेजा गया है।',
+        ],
+    ],
+
+    'tenant' => [
+        'layouts' => [
+            'header' => [
+                'register-btn' => 'विभागीय के रूप में रजिस्टर करें',
+            ],
+    
+            'footer' => [
+                'footer-text'     => '© कॉपीराइट 2010 - 2023, वेबकुल सॉफ़्टवेयर (भारत में पंजीकृत)। सभी अधिकार सुरक्षित।',
+                'connect-with-us' => 'हमसे जुड़ें',
+                'text-locale'     => 'स्थान',
+                'text-currency'   => 'मुद्रा',
+            ],
+        ],
+    
+        'registration' => [
+            'merchant-auth'       => 'व्यापारी पंजीकरण',
+            'step-1'              => 'चरण 1',
+            'auth-cred'           => 'प्रमाणीकरण क्रेडेंशियल्स',
+            'email'               => 'ईमेल',
+            'phone'               => 'फ़ोन',
+            'username'            => 'उपयोगकर्ता नाम',
+            'password'            => 'पासवर्ड',
+            'cpassword'           => 'पासवर्ड की पुनरावृत्ति',
+            'continue'            => 'जारी रखें',
+            'step-2'              => 'चरण 2',
+            'personal'            => 'व्यक्तिगत विवरण',
+            'first-name'          => 'पहला नाम',
+            'last-name'           => 'अंतिम नाम',
+            'step-3'              => 'चरण 3',
+            'org-details'         => 'संगठन विवरण',
+            'org-name'            => 'संगठन का नाम',
+            'company-activated'   => 'सफलता: कंपनी सफलतापूर्वक सक्रिय हो गई है।',
+            'company-deactivated' => 'सफलता: कंपनी सफलतापूर्वक निष्क्रिय की गई है।',
+            'company-updated'     => 'सफलता: कंपनी सफलतापूर्वक अपडेट की गई है।',
+            'something-wrong'     => 'चेतावनी: कुछ गड़बड़ हो गई है।',
+            'store-created'       => 'सफलता: स्टोर सफलतापूर्वक बनाया गया है।',
+            'something-wrong-1'   => 'चेतावनी: कुछ गड़बड़ हो गई है, कृपया बाद में पुनः प्रयास करें।',
+            'content'             => 'एक व्यापारी बनें और सर्वर स्थापित और प्रबंधित करने की चिंता किए बिना अपनी खुद की स्टोर आराम से बनाएं। आपको केवल साइन अप करना है, उत्पाद डेटा अपलोड करना है और अपनी ई-कॉमर्स स्टोर प्राप्त करना है। Laravel मल्टी कंपनी SaaS मॉड्यूल आसान customization की सुविधा प्रदान करता है, इसका मतलब है कि व्यापारी अपनी स्टोर को किसी भी अतिरिक्त सुविधाओं और क्षमताओं से आसानी से जोड़ सकता है या उसे आसानी से बढ़ा सकता है।',
+    
+            'right-panel' => [
+                'heading'    => 'व्यापारी खाता सेटअप कैसे करें',
+                'para'       => 'इसे कुछ कदमों में सेटअप करना बहुत आसान है',
+                'step-one'   => 'ईमेल, पासवर्ड और पासवर्ड की पुनरावृत्ति जैसे प्रमाणीकरण क्रेडेंशियल्स दर्ज करें',
+                'step-two'   => 'पहले नाम, अंतिम नाम और फ़ोन नंबर जैसे व्यक्तिगत विवरण दर्ज करें।',
+                'step-three' => 'उपयोगकर्ता नाम, संगठन का नाम जैसे संगठन विवरण दर्ज करें।',
+            ],
+        ],
+    
+        'custom-errors' => [
+            'channel-creating'                  => 'चेतावनी: एक से अधिक चैनल बनाना अनुमति नहीं है',
+            'channel-hostname'                  => 'चेतावनी: कृपया अपने होस्टनेम को बदलने के लिए व्यवस्थापक से संपर्क करें',
+            'same-domain'                       => 'चेतावनी: मुख्य डोमेन के रूप में एक समान सब-डोमेन नहीं रख सकते',
+            'block-message'                     => 'चेतावनी: इस विभाग को अनब्लॉक करना चाहते हैं, हमसे संपर्क करने के लिए बेहतर है कि आप हमें 24x7 उपलब्ध हैं ताकि हम आपकी समस्या को हल कर सकें।',
+            'blocked'                           => 'ने प्रतिबंधित कर दिया है',
+            'illegal-action'                    => 'चेतावनी: आपने एक अवैध क्रिया की है',
+            'domain-message'                    => 'चेतावनी: ओह! हम <b>:domain</b> पर मदद कर नहीं सकते हैं',
+            'domain-desc'                       => 'यदि आप <b>:domain</b> के रूप में संगठन के रूप में एक खाता बनाना चाहते हैं, तो कृपया एक खाता बनाएं और प्रारंभ करें।',
+            'illegal-message'                   => 'चेतावनी: आपने साइट व्यवस्थापक द्वारा अक्षम क्रिया की है, इसके बारे में अधिक विवरण के लिए कृपया अपने साइट व्यवस्थापक को मेल करें।',
+            'locale-creation'                   => 'चेतावनी: अंग्रेजी के अलावा कोई भाषा बनाने की अनुमति नहीं है।',
+            'locale-delete'                     => 'चेतावनी: भाषा को हटा नहीं सकते।',
+            'cannot-delete-default'             => 'चेतावनी: डिफ़ॉल्ट चैनल को हटा नहीं सकते।',
+            'tenant-blocked'                    => 'किरायेदार ब्लॉक किया गया है',
+            'domain-not-found'                  => 'चेतावनी: डोमेन नहीं मिला।',
+            'company-blocked-by-administrator'  => 'इस किरायेदार को व्यवस्थापक द्वारा ब्लॉक किया गया है',
+            'not-allowed-to-visit-this-section' => 'चेतावनी: आपको इस खंड का उपयोग करने की अनुमति नहीं है।',
+            'auth'                              => 'चेतावनी: प्रमाणीकरण त्रुटि!',
+        ],
+    
+        'emails' => [
+            'new-company-register-agent' => [
+                'subject'    => 'नई कंपनी रजिस्टर हुई',
+                'first-name' => 'पहला नाम',
+                'last-name'  => 'अंतिम नाम',
+                'email'      => 'ईमेल',
+                'name'       => 'नाम',
+                'username'   => 'उपयोगकर्ता नाम',
+                'domain'     => 'डोमेन',
+            ],
+    
+            'new-company-register-tenant' => [
+                'subject'    => 'नई कंपनी सफलतापूर्वक रजिस्टर हुई',
+                'dear'       => 'प्रिय :tenant_name',
+                'greeting'   => 'आपका स्वागत है और हमारे साथ पंजीकृत होने के लिए धन्यवाद!',
+                'summary'    => 'आपका खाता अब सफलतापूर्वक बना गया है और आप अपने ईमेल पते और पासवर्ड क्रेडेंशियल का उपयोग करके लॉगिन कर सकते हैं। लॉगिन करने के बाद, आप उत्पाद, बिक्री, ग्राहक, समीक्षा और प्रचार जैसी अन्य सेवाओं तक पहुँच सकते हैं।',
+                'thanks'     => 'धन्यवाद!',
+                'visit-shop' => 'दुकान देखें',
+            ],
+        ],
+    ],
+
+    'admin' => [
+        'tenant-profile' => [
+            'edit-title'     => 'कंपनी विवरण संपादित करें',
+            'first-name'     => 'पहला नाम',
+            'last-name'      => 'अंतिम नाम',
+            'email'          => 'ईमेल',
+            'skype'          => 'स्काइप',
+            'cname'          => 'सीनाम',
+            'phone'          => 'फ़ोन',
+            'general'        => 'सामान्य',
+            'back-btn'       => 'पीछे',
+            'save-btn'       => 'विवरण सहेजें',
+            'update-success' => 'सफलता: :resource सफलता से अपडेट किया गया है।',
+            'update-failed'  => 'चेतावनी: अज्ञात कारणों के कारण :resource को अपडेट नहीं किया जा सकता है।',
+        ],
+    
+        'tenant-address' => [
+            'index' => [
+                'title'      => 'कंपनी पता सूची',
+                'create-btn' => 'पता जोड़ें',
+    
+                'datagrid' => [
+                    'id'          => 'आईडी',
+                    'address1'    => 'पता 1',
+                    'address2'    => 'पता 2',
+                    'city'        => 'शहर',
+                    'country'     => 'देश',
+                    'edit'        => 'संपादित करें',
+                    'delete'      => 'हटाएं',
+                    'mass-delete' => 'बड़े पैमाने पर हटाएं',
+                ],
+            ],
+    
+            'create' => [
+                'title'     => 'कंपनी पता बनाएँ',
+                'general'   => 'सामान्य',
+                'address1'  => 'पता 1',
+                'address2'  => 'पता 2',
+                'country'   => 'देश',
+                'state'     => 'राज्य',
+                'city'      => 'शहर',
+                'post-code' => 'पिन कोड',
+                'phone'     => 'फ़ोन',
+                'back-btn'  => 'पीछे',
+                'save-btn'  => 'पता सहेजें',
+            ],
+    
+            'edit' => [
+                'title'     => 'कंपनी पता संपादित करें',
+                'general'   => 'सामान्य',
+                'address1'  => 'पता 1',
+                'address2'  => 'पता 2',
+                'country'   => 'देश',
+                'state'     => 'राज्य',
+                'city'      => 'शहर',
+                'post-code' => 'पिन कोड',
+                'phone'     => 'फ़ोन',
+                'back-btn'  => 'पीछे',
+                'save-btn'  => 'पता सहेजें',
+            ],
+    
+            'create-success'      => 'सफलता: कंपनी का पता सफलता से बनाया गया है।',
+            'update-success'      => 'सफलता: कंपनी का पता सफलता से अपडेट किया गया है।',
+            'delete-success'      => 'सफलता: :resource सफलता से हटा दिया गया है।',
+            'delete-failed'       => 'चेतावनी: अज्ञात कारणों के कारण :resource को हटाया नहीं जा सकता है।',
+            'mass-delete-success' => 'सफलता: चयनित पता सफलतापूर्वक हटा दिया गया है।',
+        ],
+    
+        'system' => [
+            'social-login'           => 'सोशल लॉगिन',
+            'facebook'               => 'फेसबुक सेटिंग्स',
+            'facebook-client-id'     => 'फेसबुक क्लाइंट आईडी',
+            'facebook-client-secret' => 'फेसबुक क्लाइंट सीक्रेट',
+            'facebook-callback-url'  => 'फेसबुक कैलबैक यूआरएल',
+            'twitter'                => 'ट्विटर सेटिंग्स',
+            'twitter-client-id'      => 'ट्विटर क्लाइंट आईडी',
+            'twitter-client-secret'  => 'ट्विटर क्लाइंट सीक्रेट',
+            'twitter-callback-url'   => 'ट्विटर कैलबैक यूआरएल',
+            'google'                 => 'गूगल सेटिंग्स',
+            'google-client-id'       => 'गूगल क्लाइंट आईडी',
+            'google-client-secret'   => 'गूगल क्लाइंट सीक्रेट',
+            'google-callback-url'    => 'गूगल कैलबैक यूआरएल',
+            'linkedin'               => 'लिंक्डइन सेटिंग्स',
+            'linkedin-client-id'     => 'लिंक्डइन क्लाइंट आईडी',
+            'linkedin-client-secret' => 'लिंक्डइन क्लाइंट सीक्रेट',
+            'linkedin-callback-url'  => 'लिंक्डइन कैलबैक यूआरएल',
+            'github'                 => 'गिटहब सेटिंग्स',
+            'github-client-id'       => 'गिटहब क्लाइंट आईडी',
+            'github-client-secret'   => 'गिटहब क्लाइंट सीक्रेट',
+            'github-callback-url'    => 'गिटहब कैलबैक यूआरएल',
+            'email-credentials'      => 'ईमेल क्रेडेंशियल्स',
+            'mail-driver'            => 'मेल ड्राइवर',
+            'mail-host'              => 'मेल होस्ट',
+            'mail-port'              => 'मेल पोर्ट',
+            'mail-username'          => 'मेल उपयोगकर्ता नाम',
+            'mail-password'          => 'मेल पासवर्ड',
+            'mail-encryption'        => 'मेल एन्क्रिप्शन',
+        ],
+    
+        'tenant' => [
+            'id'              => 'आईडी',
+            'first-name'      => 'पहला नाम',
+            'last-name'       => 'अंतिम नाम',
+            'email'           => 'ईमेल',
+            'skype'           => 'स्काइप',
+            'c-name'          => 'सीनाम',
+            'add-address'     => 'पता जोड़ें',
+            'country'         => 'देश',
+            'city'            => 'शहर',
+            'address1'        => 'पता 1',
+            'address2'        => 'पता 2',
+            'address'         => 'पता सूची',
+            'company'         => 'किरायेदार',
+            'profile'         => 'प्रोफ़ाइल',
+            'update'          => 'अपडेट',
+            'address-details' => 'पता विवरण',
+            'create-failed'   => 'चेतावनी: अज्ञात कारणों के कारण :attribute बनाया नहीं जा सकता है।',
+            'update-success'  => 'सफलता: :resource सफलता से अपडेट किया गया है।',
+            'update-failed'   => 'चेतावनी: अज्ञात कारणों के कारण :resource को अपडेट नहीं किया जा सकता है।',
+    
+            'company-address' => [
+                'add-address-title'    => 'नया पता',
+                'update-address-title' => 'पता अपडेट करें',
+                'save-btn-title'       => 'पता सहेजें',
+            ],
+        ],
+    ],
+    
+    'mail' => [
+        'order' => [
+            'greeting-admin' => ':placed_by ने :created_at को आर्डर :order_id द्वारा रखा गया है।',
+        ],
+    ],
+
+    'errors' => [
+        '404' => [
+            'description' => 'उफ़! वह पृष्ठ जिसे आप ढूंढ़ रहे हैं अभी अवकाश पर है। ऐसा लगता है कि हमें वह नहीं मिल सका जिसे आप खोज रहे थे।',
+            'title'       => '404 पृष्ठ नहीं मिला',
+        ],
+
+        '401' => [
+            'description' => 'उफ़! ऐसा लगता है कि आपको इस पृष्ठ तक पहुंच की अनुमति नहीं है। ऐसा लगता है कि आपके पास आवश्यक प्रमाणपत्र नहीं हैं।',
+            'title'       => '401 अनधिकृत',
+        ],
+
+        '403' => [
+            'description' => 'उफ़! यह पृष्ठ प्रतिबंधित है। ऐसा लगता है कि आपके पास इस सामग्री को देखने के लिए आवश्यक अनुमति नहीं है।',
+            'title'       => '403 प्रतिबंधित',
+        ],
+
+        '500' => [
+            'description' => 'उफ़! कुछ गड़बड़ हो गई है। ऐसा लगता है कि हमें वह पृष्ठ लोड करने में समस्या हो रही है जिसे आप ढूंढ़ रहे हैं।',
+            'title'       => '500 आंतरिक सर्वर त्रुटि',
+        ],
+
+        '503' => [
+            'description' => 'उफ़! ऐसा लगता है कि हम अस्थायी रूप से बंद हैं। कृपया थोड़ी देर बाद वापस आएं।',
+            'title'       => '503 सेवा अनुपलब्ध',
+        ],
+    ],
+];

@@ -1,0 +1,12 @@
+{
+  "src/Resources/assets/css/admin.css": {
+    "file": "assets/admin-b70cd1c6.css",
+    "isEntry": true,
+    "src": "src/Resources/assets/css/super.css"
+  },
+  "src/Resources/assets/css/super.css": {
+    "file": "assets/admin-b70cd1c6.css",
+    "isEntry": true,
+    "src": "src/Resources/assets/css/super.css"
+  }
+}

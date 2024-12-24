@@ -1,0 +1,26 @@
+{
+    "name": "bagisto/laravel-multi-tenant",
+    "license": "MIT",
+    "description" : "SAASCustomizer package",
+    "authors": [
+        {
+            "name": "Bagisto",
+            "email": "support@bagisto.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Webkul\\SAASCustomizer\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\SAASCustomizer\\Providers\\SAASCustomizerServiceProvider"
+            ],
+            "aliases": {}
+        }
+    },
+    "minimum-stability": "dev"
+}

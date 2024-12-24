@@ -1,0 +1,18 @@
+
+%menu-properties {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.subscription-icon {
+    @extend %menu-properties;
+    background-image: url("../images/Icon-Subscription.svg");
+}
+
+.active {
+    .subscription-icon {
+        background-image: url("../images/Icon-Subscription-Active.svg");
+    }
+}
